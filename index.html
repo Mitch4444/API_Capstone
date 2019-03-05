@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Beer-Overflow</title>
+      <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+      <link href="main.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main class="col-12 main">
+      <div class="content-wrapper">
+        <section id="beers-header">
+          <header><h1>Beer-Overflow</h1></header>
+          <h2><label for="get-beers-form">Find the perfect beer for you</label></h2>
+        </section>
+        <section id="messages">
+          <p id="errors"></p>
+        </section>
+
+        <section id="get-beers">
+         
+          <form id="get-beers-form">
+          <fieldset>
+            <label for="beers">Enter an alcohol percentage<p>Whole numbers only</p></label>
+            <input type="number" name="beer" id="abv" required="true">
+            
+            <button type="submit" name="submit" id="getBeersButton" onclick="input();" >Get Beers</button>
+          </fieldset>  
+          </form>
+        </section>
+        <section>
+          <ul id="results"></ul>
+        </section>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
