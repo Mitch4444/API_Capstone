@@ -9,7 +9,7 @@ body {
     background-color: lightblue;
   }
   
-  #beers-header, #get-beers, #messages, label {
+  #beers-header, #get-beers, #messages {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,11 +41,12 @@ body {
   button {
     background-color: #1B1BB3;
     color: whitesmoke;
-    width: 133px;
+    width:50%;
     height: 40px;
     font-size: 100%;
     border-radius: 6px;
     border: #1B1BB3;
+    margin-top: 6px;
   }
   
   button:hover{
@@ -56,9 +57,13 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
+  .results {
+    color: rgb(168, 90, 16);
+  }
+
   .break {
     width:100%; 
-    height:6px; 
+    height:3px; 
     background-color:rgb(230, 230, 129);
     border: none;
   }
@@ -66,4 +71,15 @@ body {
   fieldset {
     align-content: center;
     border: none;
+  }
+
+  label {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+  }
+
+  #abv {
+    text-align: center;
+    width: 50%;
+    height: 30px;
   }
