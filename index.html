@@ -25,8 +25,8 @@
          
           <form id="get-beers-form">
           <fieldset>
-            <label for="beers">Enter an alcohol percentage<p>Whole numbers only</p></label>
-            <input type="number" name="beer" id="abv" required="true">
+            <label for="beers">Enter a number & get a beer with a higher ABV<p>Whole numbers only</p></label>
+            <input type="number" name="beer" id="abv" required="true" value="4" min="4">
             
             <button type="submit" name="submit" id="getBeersButton" onclick="input();" >Get Beers</button>
           </fieldset>  
